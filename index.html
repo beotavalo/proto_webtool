@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <!--<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <title>Webtool - Priorización de Inversión de Transporte</title>
+</head>
+
+<body>
+    <h1>Ecuador Road Planning</h1>
+    <h2>Guía de Priorización de Inversiones de Transporte </h2>
+    <h2> Ministerio de Transporte y Obras Públicas de Ecuador (MTOP) </h2>
+    <h2> </h2>
+
+
+
+    <div id="contenedor-del-mapa"></div>
+    <div id="app">
+        <h1> {{message}}</h1>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="./data/nxprovincias.js"></script>
+    <script src="./data/proyectos_definitivos.js"></script>
+    <script src="index.vue"></script>
+
+</body>
+
+</html>
