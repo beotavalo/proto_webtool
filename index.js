@@ -1,11 +1,10 @@
 var mapa = L.map("contenedor-del-mapa").setView([-1.8, -78], 6.5) //-78, -1.8, 6
 //L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png?", {}).addTo(mapa)
 
-L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.{ext}', {
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png?', {
 	minZoom: 5,
-	maxZoom: 8,
-	attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	ext: 'png'
+	maxZoom: 8
 }).addTo(mapa);
 
  
